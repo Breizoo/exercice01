@@ -1,0 +1,192 @@
+body {
+  background-image: url(texture/bois_01_1000x667.png);
+  font-family: 'Anton', sans-serif;
+  font-family: 'Geologica', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+  background-color:white;
+  border-radius: 10px;
+  display: grid;
+  justify-content: center;
+}
+
+main div {
+  background-color: beige;
+  border-radius: 10px;
+}
+
+main div p {
+  text-align: justify;
+}
+
+
+img {
+  width: 120px;
+  height: auto;
+  justify-self: center;
+}
+
+.images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery a {
+  padding: 5px;
+}
+
+h2 {
+  text-align: center;
+  border-radius: 5px;
+  color: #806066;
+}
+
+footer {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: black;
+  color: beige ;
+  font-size: 0.75rem;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  border: 1px solid white;
+}
+
+.copyright {
+  text-align: center;
+}
+
+iframe {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+form div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
+
+input, select, textarea, button {
+  color: #806066;
+  border: none;
+  box-shadow: 0px 1px 1px 0px;
+  border-radius: 2px;
+}
+
+/* Changement de dimension : pour tablette */
+
+@media (min-width: 768px) {
+  
+  header {
+    border-radius: 15px;
+  }
+  
+  main div {
+    border-radius: 15px;
+  }
+
+  img {
+    width: 150px;
+    height: auto;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  
+  .container {
+    padding: 10px;
+  }
+  
+  h2 {
+    text-align: center;
+    border-radius: 5px;
+    color: #806066;
+  }
+
+  iframe {
+    width: 600px;
+    height: 400px;
+  }
+  
+  footer {
+    border-radius: 15px;
+  }
+}
+
+/* Changement de dimension : pour ordinateur de bureau */
+
+@media (min-width: 992px) {
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    font-size: 1.25rem;
+  }
+
+  .nav-item {
+    background-color:#F8D7Da;
+    border-radius: 10px;
+    margin: 10px;
+  }
+
+  iframe {
+    width: 800px;
+  }
+
+  .footer-menu {
+    justify-content: center;
+  }
+
+  .footer-menu li {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 1rem;
+  }
+}
+
+/* Changement de dimension : pour écran large */
+@media (min-width: 1200px) {
+  header {
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin: 10px;
+  }
+
+  main {
+    display: flex;
+  }
+
+  iframe {
+    width: 800px;
+    height: 400px;
+  }
+
+  .intro {
+    width: 1000px;
+  }
+
+}
